@@ -2,24 +2,48 @@
 <div class="jumbotron center">
   <h1>Welcome to MyRecipes App</h1>
   <h2>The best recipe sharing app!</h2>
-  <p><%= link_to "Sign up or Log in", "#", class: 'btn btn-default btn-lg btn-xlarge' %></p>
+  <p><%= link_to "Sign up or Log in", "#", class: 'btn btn-default btn-lg btn-xlarge hvr-sweep-to-right' %></p>
 </div>
 
-<div class="row">
-  <div class="col-lg-4">
-    <h2>Baked Pasta with Sausage</h2>
-      <p class="text-default">"This recipe comes from my Army days where dishes were often created by throwing in everything including the kitchen sink! I've refined it over the years, and this recipe yields a tangy yet sweet and rich sauce that is sure to make your soldiers happy. The sauce is excellent over any pasta." </p>
-      <p><a class="btn btn-default btn-xlarge" href="#" role="button">View details &raquo;</a></p>
+<div class="container">
+  <div class="row">
+   <div class="col-sm-6 col-md-4">
+     <div class="thumbnail">
+       <div class="hvr-shadow-radial">
+       <%= image_tag('pasta.jpg')  %>
+      
+       <div class="caption">
+        <h2>Baked Pasta with Sausage</h2>
+        <p class="text-default">"This recipe comes from my Army days where dishes were often created by throwing in everything including the kitchen sink! I've refined it over the years, and this recipe yields a tangy yet sweet and rich sauce that is sure to make your soldiers happy. The sauce is excellent over any pasta." </p>
+        <p><a class="btn btn-default btn-xlarge hvr-grow-shadow" href="#" role="button">View details &raquo;</a></p>
+         </div>
+      </div>
+    </div>
   </div>
-  <div class="col-lg-4">
-    <h2>Chicken Creole</h2>
-      <p>Delicious chicken gumbo consistency with tomato base. Makes plenty to last for several days. Serve over hot cooked rice and sprinkle with filé powder, if desired.</p>
-       <p><a class="btn btn-default btn-xlarge" href="#" role="button">View details &raquo;</a></p>
+    <div class="col-sm-6 col-md-4">
+     <div class="thumbnail">
+       <div class="hvr-shadow-radial">
+       <%= image_tag('gumbo.jpg')  %>
+       <div class="caption">
+      <h2>Chicken Creole</h2>
+        <p>Delicious chicken gumbo consistency with tomato base. Makes plenty to last for several days. Serve over hot cooked rice and sprinkle with filé powder, if desired.</p>
+         <p><a class="btn btn-default btn-xlarge hvr-grow-shadow" href="#" role="button">View details &raquo;</a></p>
+         </div>
+      </div>
+    </div>
   </div>
-  <div class="col-lg-4">
-    <h2>Tuscan Chicken</h2>
-      <p>Only four ingredients are needed to make this hearty Italian inspired chicken dinner. Serve with rice and a tossed salad.</p>
-      <p><a class="btn btn-default btn-xlarge" href="#" role="button">View details &raquo;</a></p>
+    <div class="col-sm-6 col-md-4">
+     <div class="thumbnail">
+       <div class="hvr-shadow-radial">
+       <%= image_tag('chicken1.jpg')  %>
+       <div class="caption">
+      <h2>Tuscan Chicken</h2>
+        <p>Only four ingredients are needed to make this hearty Italian inspired chicken dinner. Serve with rice and a tossed salad.</p>
+        <p><a class="btn btn-default btn-xlarge hvr-grow-shadow" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
