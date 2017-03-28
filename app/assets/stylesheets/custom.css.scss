@@ -57,26 +57,44 @@ $navbar-default-bg: #686868;
   -webkit-box-shadow: 0 0 20px #ccc; 
   box-shadow: 0 0 20px #ccc; 
 }
-
-/* Button 1c */
-.btn-1c:after {
-	width: 0%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: #fff;
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+footer a {
+  color: #EF5E29;
+}
+footer a:hover {
+  color: #222;
+}
+footer small {
+  float: left;
 }
 
-.btn-1c:hover,
-.btn-1c:active {
-	color: #0e83cd;
+footer ul {
+  float: right;
+  list-style: none;
+}
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+.description {
+  margin-top: 0;
+}
+.well a {
+  color: #EF5E29;
+}
+.chef_info {
+  margin-top: 10px;
 }
 
-.btn-1c:hover:after,
-.btn-1c:active:after {
-	width: 100%;
+.colormatch a {
+  color: #EF5E29;
+  font-weight: 500;
 }
-
 
 /* HOVER GROW */
 .hvr-grow {
