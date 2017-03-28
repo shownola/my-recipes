@@ -22,8 +22,6 @@ class RecipesTest < ActionDispatch::IntegrationTest
     assert_template 'recipes/index'
     assert_select "a[href=?]", recipe_path(@recipe), text: @recipe.name
     assert_select "a[href=?]", recipe_path(@recipe2), text: @recipe2.name
-    
-    
   end
   
   test "should get recipes show" do
