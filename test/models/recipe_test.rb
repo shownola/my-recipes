@@ -3,7 +3,8 @@ require 'test_helper'
 class RecipeTest < ActiveSupport::TestCase
   
   def setup
-    @chef = Chef.create!(chefname: "Jackson", email: "jackson@email.com")
+    @chef = Chef.create!(chefname: "Jackson", email: "jackson@email.com", 
+            password: "jackson", password_confirmation: "jackson")
     @recipe = @chef.recipes.build(name: "Vegetable Stir Fry", description: "Great asian cuisine")
   end
   
