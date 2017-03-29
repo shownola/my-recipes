@@ -10,7 +10,7 @@ class RecipesEditTest < ActionDispatch::IntegrationTest
     @recipe = Recipe.create(name: "Benedict creole", description: "Eggs benedict with a spicy creole seasoning", chef: @chef)
   end
   
-  test "reject invalid reicpe update" do
+  test "reject invalid recipe update" do
     get edit_recipe_path(@recipe)
     assert_template 'recipes/edit'
     patch recipe_path(@recipe), params: { recipe: { name: " ", description: "some description" } }
@@ -24,7 +24,7 @@ class RecipesEditTest < ActionDispatch::IntegrationTest
     assert_template 'recipes/edit'
     updated_name = "updated recipe name"
     updated_description = "updated recipe description"
-    patch recipe_path (@recipe), params: { recipe: { name: updated_name, description: updated_description } }
+    patch recipe_path(@recipe), params: { recipe: { name: updated_name, description: updated_description } }
     assert_redirected_to @recipe
     assert_not flash.empty?
     @recipe.reload

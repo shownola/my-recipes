@@ -6,9 +6,10 @@ $navbar-default-bg: #686868;
 #logo {
   float: left;
   font-size: 1.7em;
+  letter-spacing: 1px;
   color: #EF5E29;
   text-transform: uppercase;
-  letter-spacing: -1px;
+  letter-spacing: -.50px;
   font-weight: bold;
 }
 #logo:hover {
