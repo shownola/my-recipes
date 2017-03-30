@@ -1,8 +1,16 @@
 $navbar-default-bg: #686868;
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  padding-top: 70px;
+}
+.navbar-default .navbar-nav > li > a {
+  
+  color: #CFCFCF;
+}
 #logo {
   float: left;
   font-size: 1.7em;
@@ -107,7 +115,15 @@ footer ul li {
   }
 }
 
-
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+.chef-title {
+  color: #EF5E29;
+  font-weight: bold;
+  font-size: 1.25em;
+}
 /* HOVER GROW */
 .hvr-grow {
     display: inline-block;
