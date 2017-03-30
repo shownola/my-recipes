@@ -1,6 +1,7 @@
 $navbar-default-bg: #686868;
 
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -66,9 +67,9 @@ body {
   opacity: .7;
 }
 .thumbnail:hover {
-  -moz-box-shadow: 0 0 20px #ccc; 
-  -webkit-box-shadow: 0 0 20px #ccc; 
-  box-shadow: 0 0 20px #ccc; 
+  -moz-box-shadow: 0 0 30px #b2adad; 
+  -webkit-box-shadow: 0 0 30px #b2adad; 
+  box-shadow: 0 0 30px #b2adad; 
 }
 footer {
   margin-top: 45px;
