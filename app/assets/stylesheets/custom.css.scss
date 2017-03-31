@@ -1,7 +1,6 @@
 $navbar-default-bg: #686868;
 
 
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -124,6 +123,10 @@ footer ul li {
   color: #EF5E29;
   font-weight: bold;
   font-size: 1.25em;
+}
+
+.input_checkbox input {
+  width: auto !important;
 }
 /* HOVER GROW */
 .hvr-grow {
