@@ -53,7 +53,7 @@ class IngredientsController < ApplicationController
     
     def require_admin
       if !logged_in? || (logged_in? and !current_chef.admin?)
-        flash[:danger] = "Only admin user can perform this action"
+        flash[:danger] = "Only admin users can perform this action"
         redirect_to ingredients_path
       end
     end

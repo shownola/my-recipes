@@ -32,7 +32,7 @@ class RecipesController < ApplicationController
   end
   
   def update
-    if@recipe.update(recipe_params)
+    if @recipe.update(recipe_params)
       flash[:success] = "Recipe was updated successfully!"
       redirect_to recipe_path(@recipe)
     else
@@ -54,7 +54,7 @@ class RecipesController < ApplicationController
   end
   
   def recipe_params
-    params.require(:recipe).permit(:name, :description, ingredient_id: [])
+    params.require(:recipe).permit(:name, :description, ingredient_ids: [])
   end
   
   def require_same_user
